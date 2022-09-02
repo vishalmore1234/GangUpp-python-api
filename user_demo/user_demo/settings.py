@@ -89,12 +89,13 @@ WSGI_APPLICATION = 'user_demo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+DATABASES = {'default': {'ENGINE': 'django.db.backends.postgresql','NAME': 'quizdb','USER': 'quiz','PASSWORD': 'quiz','HOST': '43.205.44.117','PORT': '8000',}}
 
 
 # Password validation
